@@ -1,0 +1,136 @@
+.nav-margin-bottom{
+    margin-bottom: 50px;
+}
+.center-content,.about-poke-container,.poke-footer,.loading{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.footer{
+    margin: 20px 0px;
+}
+.row{
+    margin-right: 0px !important;
+}
+.button-toggle-text{
+    color:#007bff;
+}
+@media screen and (min-width:180px) and (max-width:380px){
+    .row{
+        display: grid;
+    }
+    .about-poke-img{
+        height: 200px;
+        width: 200px;
+    }
+    .about-poke-container{
+        gap: 20px;
+    }
+}
+@media screen and (max-width:900px){
+    .poke-name,.poke-know-more,.nav-button-font,.loading,th,td{
+        font-size: 20px;
+    }
+    .poke-image{
+        height: 80px;
+        width: 80px;
+    }
+    .about-poke-img{
+        height: 200px;
+        width: 200px;
+    }
+}
+@media screen and (min-width:900px){
+    .poke-name,.poke-know-more,.nav-button-font,.loading,th,td{
+        font-size: 24px;
+    }
+    .poke-image{
+        height: 150px;
+        width: 150px;
+    }
+}
+.bold{
+    font-weight: 800;
+}
+.active-page{
+    background-color: #6610f2 !important;
+    color: #fff !important;
+    box-shadow: #6610f2 !important;
+}
+.loading{
+    background-color: red;
+    color: white;
+}
+
+/* Toggler */
+input[type=checkbox]{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+label {
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 80px;
+	height: 40px;
+	background: rgb(128, 128, 128);
+	display: block;
+	border-radius: 100px;
+	position: relative;
+}
+
+label:after {
+	content: '';
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 30px;
+	height: 30px;
+	background: #fff;
+	border-radius: 90px;
+	transition: 0.3s;
+}
+
+input:checked + label {
+	background: rgb(145, 218, 85);
+}
+
+input:checked + label:after {
+	left: calc(100% - 5px);
+	transform: translateX(-100%);
+}
+
+label:active:after {
+	width: 30px;
+}
+
+/* pagination */
+.pagination{
+    display: inline-block;
+    margin: 20px 0px;
+    gap: 10px;
+}
+  
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+  
+.pagination a.active{
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+}
+  
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+#previous,#next{
+    background-color: #007bff;
+    color: #fff;
+}

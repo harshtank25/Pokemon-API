@@ -122,7 +122,7 @@ function updatePage(offSet){
                 </div>
                 <div class="col poke-name">${value.name}</div>
                 <div class="col">
-                    <a href="./about.html?id=${key + offSet}&offset=${offSet}">
+                    <a href="./about.html?key=${key + offSet}&offset=${offSet}">
                         <button type="button" class="btn btn-success poke-know-more" id="poke${key}">Know More!!</button>
                     </a>
                 </div>`;
